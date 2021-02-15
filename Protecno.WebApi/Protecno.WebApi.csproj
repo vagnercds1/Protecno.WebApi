@@ -1,8 +1,19 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNet.WebApi.Core" Version="5.2.7" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Protecno.Core\Protecno.Core.csproj" />
+    <ProjectReference Include="..\Protecno.WebApi.Model\Protecno.WebApi.Model.csproj" />
+    <ProjectReference Include="..\Protecno.WebApi.Repository\Protecno.WebApi.Repository.csproj" />
+  </ItemGroup>
 
 
 </Project>
